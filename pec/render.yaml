@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: your-app-name
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: FIREBASE_TYPE
+        value: <your-firebase-type>
+      - key: FIREBASE_PROJECT_ID
+        value: <your-firebase-project-id>
+      - key: FIREBASE_PRIVATE_KEY_ID
+        value: <your-firebase-private-key-id>
+      - key: FIREBASE_PRIVATE_KEY
+        value: <your-firebase-private-key>
+      - key: FIREBASE_CLIENT_EMAIL
+        value: <your-firebase-client-email>
+      - key: FIREBASE_CLIENT_ID
+        value: <your-firebase-client-id>
+      - key: FIREBASE_AUTH_URI
+        value: <your-firebase-auth-uri>
+      - key: FIREBASE_TOKEN_URI
+        value: <your-firebase-token-uri>
+      - key: FIREBASE_AUTH_PROVIDER_CERT_URL
+        value: <your-firebase-auth-provider-cert-url>
+      - key: FIREBASE_CLIENT_CERT_URL
+        value: <your-firebase-client-cert-url>
